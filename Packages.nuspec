@@ -8,6 +8,6 @@
     <description>Unofficial Packages distribution via Nuget.</description>
   </metadata>
   <files>
-    <file src="Packages\**\*.*" target="lib" />
+    <file src="Packages\*" target="lib" />
   </files>
 </package>
