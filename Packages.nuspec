@@ -2,12 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>EquinoxLabs.Packages</id>
-    <version>1.2.5</version>
+    <version>1.2.5.1</version>
     <title>EquinoxLabs.Packages</title>
     <authors>EquinoxLabs</authors>
     <description>Unofficial Packages distribution via Nuget.</description>
+    <copyright>WhiteBox {http://s.sudre.free.fr/Software/Packages/about.html}</copyright>
+    <language>en-US</language>
+    <tags>installer packages</tags>
   </metadata>
   <files>
-    <file src="Packages\*" target="lib" />
+    <file src="Packages\*" target="tools" />
   </files>
 </package>

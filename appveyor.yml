@@ -10,7 +10,7 @@ build_script:
 - cmd: nuget pack Packages.nuspec -OutputDirectory artifacts
 
 after_test:
-  - cmd: appveyor PushArtifact "artifacts\EquinoxLabs.Packages.1.2.5.nupkg"
+  - cmd: appveyor PushArtifact "artifacts\EquinoxLabs.Packages.1.2.5.1.nupkg"
 
 deploy:
   provider: NuGet
