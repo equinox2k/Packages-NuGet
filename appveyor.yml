@@ -1,0 +1,23 @@
+version: 1.0.0.{build}
+image: Visual Studio 2017
+
+branches:
+  only:
+    - master
+
+build_script:
+- cmd: mkdir artifacts
+- cmd: nuget pack Packages.nuspec -OutputDirectory artifacts
+
+after_test:
+  - cmd: appveyor PushArtifact "artifacts\EquinoxLabs.Packages.1.2.5.nupkg"
+
+deploy:
+  provider: NuGet
+  api_key:
+    secure: mDwn5Rqiu4ys9luHvWQo7AAd99VmHiApFyS/lrZhTvdnMj1IA/HiYb2LVeet3Vet
+  skip_symbols: false
+  artifact: /.*\.nupkg/
+  on:
+    branch: master
+

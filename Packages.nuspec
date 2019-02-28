@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EquinoxLabs.Packages</id>
+    <version>1.2.5</version>
+    <title>EquinoxLabs.Packages</title>
+    <authors>EquinoxLabs</authors>
+    <description>Unofficial Packages distribution via Nuget.</description>
+  </metadata>
+  <files>
+    <file src="Packages\**\*.*" target="lib" />
+  </files>
+</package>
